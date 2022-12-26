@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(219, 219, 219);
+  direction: rtl;
+}
+body * {
+  /* transition: all 0.6s; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 20px;
+  margin-right: 60px;
+  color: #333;
+  font-size: xx-large;
+}
+ul {
+  font-size: large;
+  display: flex;
+  list-style: none;
+}
+ul a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 30px;
+  color: #333;
+  font-weight: 1000;
+}
+header {
+  background-color: aliceblue;
+}
+header a:hover {
+  border-bottom: #333 3px solid;
+}
+section {
+  width: 100%;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  font-size: 29px;
+  color: #333;
+}
+img {
+  width: 200px;
+  object-fit: cover;
+  position: absolute;
+  left: 150px;
+}
+p {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 30px;
+  /* visibility: hidden; */
+  padding-top: 20px;
+  margin-bottom: 120px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: #333;
+  margin: 5px;
+  margin-right: 12px;
+  margin-top: 12px;
+  border-radius: 5px;
+}
+.card h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(219, 219, 219);
+}
+.card p {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(186, 186, 186);
+  font-size: x-large;
+}
+.messages {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.message img {
+  width: 400px;
+  object-fit: cover;
+  position: relative;
+  left: 0px;
+}
+footer {
+  width: 100%;
+  background: #333;
+  padding-bottom: 30px;
+}
+footer .title {
+  color: white;
+  padding-top: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  margin-right: 220px;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(145, 145, 145, 0.836);
+}
+.fa-facebook {
+  font-size: x-large;
+  color: blue;
+}
+.fa-youtube {
+  font-size: x-large;
+  color: red;
+}
+.fa-whatsapp {
+  font-size: x-large;
+  color: rgb(5, 226, 5);
+}
+@media only screen and (max-width: 360px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  header {
+    width: 107.5%;
+  }
+  .logo {
+    padding: 10px;
+    margin-right: 20px;
+    font-size: large;
+  }
+  ul {
+    font-size: 12px;
+  }
+  ul a {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 23px;
+    color: #333;
+  }
+  .first img {
+    display: none;
+  }
+  .card h2 {
+    margin-top: 20px;
+  }
+  .card p {
+    margin-top: 10px;
+    font-size: large;
+  }
+  .message img {
+    width: 100%;
+    margin-right: 4%;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 45%;
+    height: 250px;
+    margin: 5px;
+    margin-right: 3%;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    display: block;
+  }
+  footer {
+    width: 108%;
+    display: block;
+    padding-bottom: 30px;
+  }
+}
